@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/template.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == "flex"){
+                    document.querySelector(".menu nav ul").style.display = "none";
+                } else{
+                    document.querySelector(".menu nav ul").style.display = "flex";
+                }
+            });
+        };
+    </script>
     <title>Projeto MediCenter 5</title>
 </head>
 
@@ -18,6 +30,11 @@
 
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">Sobre</a></li>
@@ -29,6 +46,7 @@
                     </ul>
                 </nav>
             </div>
+        </div>
         </div>
     </header>
 
@@ -44,20 +62,22 @@
             <div class="banner_options">
                 <div class="banner1">
                     <div class="banner_title">Caso de emergência</div>
-                    <div class="banner_desc">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. </div>
+                    <div class="banner_desc">Algum texto qualquer</div>
                     <a href="">Ler mais</a>
                 </div>
                 <div class="banner2">
                     <div class="banner_title">Horário dos médicos</div>
-                    <div class="banner_desc">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</div>
+                    <div class="banner_desc">Algum texto qualquer</div>
                     <a href="">Ler mais</a>
 
                 </div>
                 <div class="banner3">
                     <div class="banner_title">Horário de funcionamento</div>
-                    <div class="banner_desc">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                    
-                    </div>
+
+                    <div class="banner_desc">Segunda - Sexta-feira <span>8:00-17:00</span> </div>
+                    <div class="banner_desc">Sábado <span>9:30-17:30</span> </div>
+                    <div class="banner_desc">Domingo <span>9:30-15:00</span> </div>
+
                     <a href="">Ler mais</a>
 
 
@@ -68,7 +88,7 @@
     </section>
 
     <section id="geral">
-        <div class="container">
+        <div class="container noticias">
             <section>
                 <div class="widget">
                     <div class="widget_titile">
@@ -76,80 +96,97 @@
                         <div class="widget_title_bar"></div>
                     </div>
                 </div>
-                <div class="widget_body">
+                <div class="widget_body flex">
                     <article>
-
                         <a href="">
                             <div class="news_data">
                                 <div class="news_posted_at">07 JAN</div>
                                 <div class="news_comments">2022</div>
                             </div>
-                            <div class="noticias">
-                                <img src="assets/img noticias/dotor1.jpeg" alt="">
+
+                            <div class="news_thumbnail">
+                                <img src="assets/img noticias/dr.jpg" alt="">
                             </div>
-                            <div class="titulo">
+                            <div class="news_title">
 
                                 Referência em Odontologia
                             </div>
-                            <div class="resumo">
-                                A MediCenter também se firmou como referência em odontologia de alto padrão. A empresa, que entrou nesse segmento em 2015. Investiu na construção de duas unidades de uma das mais modernas clínicas odontológicas do país que hoje atende mais de 5 mil pacientes por mês.
+                            <div class="news_resume">
+                                A MediCenter também se firmou como referência em odontologia de alto padrão. A empresa,
+                                que entrou nesse segmento em 2015. Investiu na construção de duas unidades de uma das
+                                mais modernas clínicas odontológicas do país que hoje atende mais de 5 mil pacientes por
+                                mês.
                             </div>
                         </a>
                     </article>
                     <article>
-
                         <a href="">
                             <div class="news_data">
-                                <div class="news_posted_at">05 OUT</div>
-                                <div class="news_comments">2021</div>
+                                <div class="news_posted_at">07 JAN</div>
+                                <div class="news_comments">2022</div>
                             </div>
-                            <div class="noticias">
-                                <img src="assets/img noticias/dotor1.jpeg" alt="">
+
+                            <div class="news_thumbnail">
+                                <img src="assets/img noticias/dr.jpg" alt="">
                             </div>
-                            <div class="titulo">
-                                Melhor espaço odontológico
+                            <div class="news_title">
+
+                                Referência em Odontologia
                             </div>
-                            <div class="resumo">
-                                Nosso espaço conta com ambientes cuidadosamente personalizados, aconchegantes e acolhedores, oferecendo ao paciente uma experiência agradável durante todas as fases do seu tratamento odontológico.
+                            <div class="news_resume">
+                                A MediCenter também se firmou como referência em odontologia de alto padrão. A empresa,
+                                que entrou nesse segmento em 2015. Investiu na construção de duas unidades de uma das
+                                mais modernas clínicas odontológicas do país que hoje atende mais de 5 mil pacientes por
+                                mês.
                             </div>
                         </a>
                     </article>
                     <article>
-
                         <a href="">
                             <div class="news_data">
-                                <div class="news_posted_at">28 DEZ</div>
-                                <div class="news_comments">2020</div>
+                                <div class="news_posted_at">07 JAN</div>
+                                <div class="news_comments">2022</div>
                             </div>
-                            <div class="noticias">
-                                <img src="assets/img noticias/dotor1.jpeg" alt="">
+
+                            <div class="news_thumbnail">
+                                <img src="assets/img noticias/dr.jpg" alt="">
                             </div>
-                            <div class="titulo">
-                                Algumas noticias
+                            <div class="news_title">
+
+                                Referência em Odontologia
                             </div>
-                            <div class="resumo">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            <div class="news_resume">
+                                A MediCenter também se firmou como referência em odontologia de alto padrão. A empresa,
+                                que entrou nesse segmento em 2015. Investiu na construção de duas unidades de uma das
+                                mais modernas clínicas odontológicas do país que hoje atende mais de 5 mil pacientes por
+                                mês.
                             </div>
                         </a>
                     </article>
                     <article>
-
                         <a href="">
                             <div class="news_data">
-                                <div class="news_posted_at">05 DEZ</div>
-                                <div class="news_comments">2019</div>
+                                <div class="news_posted_at">07 JAN</div>
+                                <div class="news_comments">2022</div>
                             </div>
-                            <div class="noticias">
-                                <img src="assets/img noticias/dotor1.jpeg" alt="">
+
+                            <div class="news_thumbnail">
+                                <img src="assets/img noticias/dr.jpg" alt="">
                             </div>
-                            <div class="titulo">
-                                Algumas noticias
+                            <div class="news_title">
+
+                                Referência em Odontologia
                             </div>
-                            <div class="resumo">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            <div class="news_resume">
+                                A MediCenter também se firmou como referência em odontologia de alto padrão. A empresa,
+                                que entrou nesse segmento em 2015. Investiu na construção de duas unidades de uma das
+                                mais modernas clínicas odontológicas do país que hoje atende mais de 5 mil pacientes por
+                                mês.
                             </div>
                         </a>
                     </article>
+
+
                 </div>
             </section>
 
@@ -162,7 +199,7 @@
                 </div>
                 <div class="widget_body">
 
-                    <div class="imagem">
+                    <div class="imagem img">
                         <div class="texto">
                             <span>DOR DE DENTE
 
@@ -170,7 +207,7 @@
                         </div>
                     </div>
 
-                    <div class="imagem2">
+                    <div class="imagem2 img">
                         <div class="texto">
                             <span>DENTE PROVISÓRIO
 
@@ -179,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="imagem3">
+                    <div class="imagem3 img">
                         <div class="texto">
                             <span>TRATAMENTO DE CANAL
 
@@ -188,7 +225,7 @@
                         </div>
                     </div>
 
-                    <div class="imagem4">
+                    <div class="imagem4 img">
                         <div class="texto">
                             <span>DENTE QUEBRADO
 
@@ -198,7 +235,7 @@
 
                         </div>
                     </div>
-                    <div class="imagem5">
+                    <div class="imagem5 img">
                         <div class="texto">
                             <span>FRATURA DE PRÓTESE
 
@@ -206,7 +243,7 @@
 
                         </div>
                     </div>
-                    <div class="imagem6">
+                    <div class="imagem6 img">
                         <div class="texto">
                             <span>INCHAÇO GENGIVAL
 
@@ -223,19 +260,131 @@
                         <div class="widget_title_text">Make An Appointment</div>
                         <div class="widget_title_bar"></div>
                     </div>
+                    <div class="widget_body_desc">
+                        <p>Com rapidez e agilidade, solucionamos todas as emergências odontológicas, proporcionando o
+                            melhor
+                            e mais completo tratamento para você. Nossos dentistas são capacitados para um atendimento
+                            imediato, garantindo o seu conforto e sua satisfação. </p>
+                    </div>
                 </div>
-                <div class="widget_body">
-                    <p>Com rapidez e agilidade, solucionamos todas as emergências odontológicas, proporcionando o melhor
-                        e mais completo tratamento para você. Nossos dentistas são capacitados para um atendimento
-                        imediato, garantindo o seu conforto e sua satisfação. </p>
+                <div class="widget">
+                    <div class="widget_titile">
+                        <div class="widget_title_text">Have a new smile</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body_desc">
+                        <p>Com rapidez e agilidade, solucionamos todas as emergências odontológicas, proporcionando o
+                            melhor
+                            e mais completo tratamento para você. Nossos dentistas são capacitados para um atendimento
+                            imediato, garantindo o seu conforto e sua satisfação. </p>
+                    </div>
                 </div>
+                <div class="widget">
+                    <div class="widget_titile">
+                        <div class="widget_title_text">Flexible hours</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body_desc">
+                        <p>Com rapidez e agilidade, solucionamos todas as emergências odontológicas, proporcionando o
+                            melhor
+                            e mais completo tratamento para você. Nossos dentistas são capacitados para um atendimento
+                            imediato, garantindo o seu conforto e sua satisfação. </p>
+                    </div>
+                </div>
+
 
             </aside>
         </div>
     </section>
 
 
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm1">
+                    <div class="titulo">Health Insurance</div>
+                    <div class="subtitulo">Here in medicenter we have idividual</div>
+                </div>
+                <div class="fm2">
+                    <div class="titulo">Health Insurance</div>
+                    <div class="subtitulo">Here in medicenter we have idividual</div>
+                </div>
 
+                <div class="fm3">
+                    <div class="titulo">Health Insurance</div>
+                    <div class="subtitulo">Here in medicenter we have idividual</div>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_titile">
+                            <div class="widget_title_text">Medicenter Clinic</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                    </div>
+                    <div class="widget_body caixa">
+                        <div class="desc primeiro">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </div>
+                        <span class="titulo">Medicenter Clinic</span>
+
+                        <div class="container-information">
+                            <div>
+                                <span>33 Fariane Street</span>
+                                <span>Keilor East</span>
+                                <span>VIC 3033, Australia</span>
+                            </div>
+
+                            <div>
+                                <span>+123 999-9999</span>
+                                <span>+123 999-9999</span>
+                                <span>medicenter@gmail.com</span>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_titile">
+                            <div class="widget_title_text">Latest Poster</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_titile">
+                            <div class="widget_title_text">Latest Tweeets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                <address>Todos os direitos reservados ©2022 Aironn Dev • São Paulo - SP • Política de Qualidade
+
+
+                </address>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 
